@@ -59,6 +59,7 @@ public class grade_f5b56c79_010 {
     public void exec () throws Exception {
         FloatObj A = new FloatObj (), B = new FloatObj (), C =
             new FloatObj (), D = new FloatObj (), score = new FloatObj ();
+        CharObj grade = new CharObj() ;
         output += (String.format ("Enter thresholds for A, B, C, D\n"));
         output += (String.format ("in that order, decreasing percentages > "));
         A.value = scanner.nextFloat ();
@@ -68,18 +69,27 @@ public class grade_f5b56c79_010 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) >"));
         score.value = scanner.nextFloat ();
-        if (score.value >= A.value) {
-            output += (String.format ("Stdent has an A grade\n"));
-        } else if (score.value < A.value && score.value >= B.value) {
-            output += (String.format ("Student has an B grade\n"));
-        } else if (score.value < B.value && score.value >= C.value) {
-            output += (String.format ("Student has an C grade\n"));
-        } else if (score.value < C.value && score.value >= D.value) {
-            output += (String.format ("Student has an D grade\n"));
-        } else {
-            output += (String.format ("Student has failed the course\n"));
-        }
+        grade(A, B, C, D, score, grade);
         if (true)
             return;;
+    }
+
+    public void grade (FloatObj A, FloatObj B, FloatObj C, FloatObj D, FloatObj score, CharObj grade) {
+        if (score.value >= A.value) {
+            output += (String.format ("Stdent has an A grade\n"));
+            grade.value = 'A';
+        } else if (score.value < A.value && score.value >= B.value) {
+            output += (String.format ("Student has an B grade\n"));
+            grade.value = 'B';
+        } else if (score.value < B.value && score.value >= C.value) {
+            output += (String.format ("Student has an C grade\n"));
+            grade.value = 'C';
+        } else if (score.value < C.value && score.value >= D.value) {
+            output += (String.format ("Student has an D grade\n"));
+            grade.value = 'D';
+        } else {
+            output += (String.format ("Student has failed the course\n"));
+            grade.value = 'F';
+        }
     }
 }
