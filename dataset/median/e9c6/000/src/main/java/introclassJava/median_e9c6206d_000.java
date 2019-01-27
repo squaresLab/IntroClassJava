@@ -63,8 +63,6 @@ public class median_e9c6206d_000 {
         a.value = scanner.nextInt ();
         b.value = scanner.nextInt ();
         c.value = scanner.nextInt ();
-        output += String.format(message(a.value, b.value, c.value), calc(a.value, b.value, c.value));
-        /*
         if ((a.value < b.value && b.value < c.value)
                 || (c.value < b.value && b.value < a.value)) {
             output += (String.format ("%d is the median\n", b.value));
@@ -74,24 +72,8 @@ public class median_e9c6206d_000 {
         } else if ((a.value < c.value && c.value < b.value)
                    || (b.value < c.value && c.value < a.value)) {
             output += (String.format ("%d is the smallest\n", c.value));
-        }*/
+        }
         if (true)
             return;;
-    }
-
-    int calc(int a, int b, int c)
-    {
-        if((a<b&&b<c) || (c<b&&b<a)) return b;
-        else if((b<a&&a<c)||(c<a&&a<b)) return a;
-        else if((a<c&&c<b)||(b<c&&c<a)) return c;
-        else return -1; //won't get printed
-    }
-
-    int message(int a, int b, int c)
-    {
-        if((a<b&&b<c) || (c<b&&b<a)) return "%d is the median\n";
-        else if((b<a&&a<c)||(c<a&&a<b)) return "%d is the smallest\n";
-        else if((a<c&&c<b)||(b<c&&c<a)) return "%d is the smallest\n";
-        else return "";
     }
 }

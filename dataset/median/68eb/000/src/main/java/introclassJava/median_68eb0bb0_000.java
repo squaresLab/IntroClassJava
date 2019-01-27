@@ -63,8 +63,6 @@ public class median_68eb0bb0_000 {
         x.value = scanner.nextInt ();
         y.value = scanner.nextInt ();
         z.value = scanner.nextInt ();
-        output += String.format("%d is the median\n", calc(x.value, y.value, z.value));
-        /*
         if (x.value >= y.value && x.value <= z.value) {
             output += (String.format ("%d is the median\n", x.value));
         } else if (y.value >= x.value && y.value <= z.value) {
@@ -72,17 +70,7 @@ public class median_68eb0bb0_000 {
         } else {
             output += (String.format ("%d is the median\n", z.value));
         }
-        */
         if (true)
             return;;
-    }
-
-    int calc(int x, int y, int z)
-    {
-        if(x>=y && x<=z)
-            return x;
-        else if(y>=x && y <=z)
-            return y;
-        else return z;
     }
 }

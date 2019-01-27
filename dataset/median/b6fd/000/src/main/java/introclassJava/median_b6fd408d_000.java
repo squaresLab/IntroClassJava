@@ -64,7 +64,6 @@ public class median_b6fd408d_000 {
         n1.value = scanner.nextInt ();
         n2.value = scanner.nextInt ();
         n3.value = scanner.nextInt ();
-        /*
         if (n2.value < n1.value) {
             temp.value = n2.value;
             n2.value = n1.value;
@@ -75,26 +74,8 @@ public class median_b6fd408d_000 {
             n2.value = n3.value;
             n3.value = temp.value;
         }
-        */
-        output += (String.format ("%d is the median\n", calc(n1.value, n2.value, n3.value)));
+        output += (String.format ("%d is the median\n", n2.value));
         if (true)
             return;;
-    }
-
-    int calc(int n1, int n2, int n3)
-    {
-        if(n2 < n1)
-        {
-            int t = n2;
-            n2 = n1;
-            n1 = t;
-        }
-        if(n3 < n2 && n3 > n1)
-        {
-            int t = n2;
-            n2 = n3;
-            n3 = t;
-        }
-        return n2;
     }
 }
