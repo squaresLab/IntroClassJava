@@ -60,6 +60,12 @@ public class digits_d767ad3b_007 {
         IntObj num = new IntObj ();
         output += (String.format ("Enter an integer > "));
         num.value = scanner.nextInt ();
+        digits(num);
+        if (true)
+            return;;
+    }
+
+    public void digits (IntObj num) {
         if (num.value == 0) {
             output += (String.format ("\n0\nThat's all, have a nice day!\n"));
         }
@@ -80,7 +86,5 @@ public class digits_d767ad3b_007 {
                 break;
             }
         }
-        if (true)
-            return;;
     }
 }

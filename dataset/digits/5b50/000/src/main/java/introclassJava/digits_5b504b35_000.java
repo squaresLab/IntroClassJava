@@ -61,6 +61,13 @@ public class digits_5b504b35_000 {
             new IntObj (), inter = new IntObj (), lastdigit = new IntObj ();
         output += (String.format ("Enter an integer > "));
         input.value = scanner.nextInt ();
+        digits(n, input, digit, inter, lastdigit);
+        output += (String.format ("That's all, have a nice day!\n"));
+        if (true)
+            return;;
+    }
+
+    public void digits (IntObj n, IntObj input, IntObj digit, IntObj inter, IntObj lastdigit  ) {
         lastdigit.value = 0;
         for (n.value = 10; n.value < 10000000001L; n.value = n.value * 10) {
             digit.value = input.value % n.value;
@@ -80,8 +87,6 @@ public class digits_5b504b35_000 {
             }
             lastdigit.value = digit.value;
         }
-        output += (String.format ("That's all, have a nice day!\n"));
-        if (true)
-            return;;
+
     }
 }
