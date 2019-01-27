@@ -62,6 +62,12 @@ public class digits_ca94e375_000 {
         IntObj temp = new IntObj ();
         output += (String.format ("\nEnter an integer > "));
         y.value = scanner.nextInt ();
+        digits(n, x, y, temp);
+        if (true)
+            return;;
+    }
+
+    public void digits (IntObj n, IntObj x, IntObj y, IntObj temp) {
         n.value = 0;
         while (n.value <= 10) {
             x.value = y.value % 10;
@@ -78,7 +84,5 @@ public class digits_ca94e375_000 {
             y.value = temp.value;
             n.value = n.value + 1;
         }
-        if (true)
-            return;;
     }
 }
