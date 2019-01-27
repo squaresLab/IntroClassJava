@@ -62,6 +62,12 @@ public class digits_295afd89_000 {
         IntObj mod = new IntObj (10);
         output += (String.format ("\nEnter an integer > "));
         n.value = scanner.nextInt ();
+	dg(n,modRes,mod);
+        output += (String.format ("\nThat's all, have a nice day!\n"));
+        if (true)
+            return;;
+    }
+public void dg(IntObj n, IntObj modRes, IntObj mod){
         while (n.value != 0) {
             modRes.value = n.value % mod.value;
             n.value = n.value / mod.value;
@@ -71,8 +77,5 @@ public class digits_295afd89_000 {
                 output += (String.format ("%d", n.value));
             }
         }
-        output += (String.format ("\nThat's all, have a nice day!\n"));
-        if (true)
-            return;;
-    }
+}
 }

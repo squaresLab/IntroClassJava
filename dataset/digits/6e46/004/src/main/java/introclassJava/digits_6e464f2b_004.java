@@ -60,6 +60,12 @@ public class digits_6e464f2b_004 {
         IntObj n = new IntObj (), i = new IntObj (), j = new IntObj ();
         output += (String.format ("\nEnter an integer > "));
         n.value = scanner.nextInt ();
+	dg(n,i,j);
+        output += (String.format ("That's all, have a nice day!\n"));
+        if (true)
+            return;;
+    }
+public void dg(IntObj n, IntObj i, IntObj j){
         output += (String.format ("\n"));
         i.value = n.value;
         if (n.value == 0) {
@@ -74,8 +80,5 @@ public class digits_6e464f2b_004 {
                 output += (String.format ("%d\n", -j.value));
             }
         }
-        output += (String.format ("That's all, have a nice day!\n"));
-        if (true)
-            return;;
-    }
+}
 }

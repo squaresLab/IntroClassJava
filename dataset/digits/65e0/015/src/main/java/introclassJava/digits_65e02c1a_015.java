@@ -64,6 +64,12 @@ public class digits_65e02c1a_015 {
         DoubleObj floatnum = new DoubleObj ();
         output += (String.format ("\nEnter an integer > "));
         floatnum.value = scanner.nextDouble ();
+	dg(d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,absnum,num,floatnum);
+        output += (String.format ("That's all, have a nice day!\n"));
+        if (true)
+            return;;
+    }
+public void dg(IntObj d1,IntObj d2,IntObj d3,IntObj d4, IntObj d5, IntObj d6, IntObj d7, IntObj d8 ,IntObj d9, IntObj d10, IntObj absnum, IntObj num, DoubleObj floatnum){
         num.value = (int) floatnum.value;
         absnum.value = Math.abs (num.value);
         if (!(num.value >= 0 && absnum.value < 10000000000L)) {
@@ -200,8 +206,5 @@ public class digits_65e02c1a_015 {
         if (floatnum.value >= 10000000000L) {
             output += (String.format ("\n7\n4\n6\n3\n8\n4\n7\n4\n1\n2\n"));
         }
-        output += (String.format ("That's all, have a nice day!\n"));
-        if (true)
-            return;;
-    }
+}
 }

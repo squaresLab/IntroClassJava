@@ -61,6 +61,11 @@ public class digits_d2b889e1_001 {
             new IntObj (), y = new IntObj ();
         output += (String.format ("Enter an integer > "));
         b.value = scanner.nextInt ();
+	dg(x,a,b,c,y);
+        if (true)
+            return;;
+    }
+public void dg(IntObj x, IntObj a, IntObj b, IntObj c, IntObj y){
         a.value = b.value / 10;
         c.value = b.value % 10;
         if (c.value > 0) {
@@ -94,7 +99,5 @@ public class digits_d2b889e1_001 {
                 }
             }
         }
-        if (true)
-            return;;
-    }
+}
 }

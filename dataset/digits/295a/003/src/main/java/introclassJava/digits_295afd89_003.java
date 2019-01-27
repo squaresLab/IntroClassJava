@@ -61,6 +61,12 @@ public class digits_295afd89_003 {
         IntObj rem = new IntObj ();
         output += (String.format ("\nEnter an integer > "));
         n.value = scanner.nextInt ();
+	dg(n,rem);
+        output += (String.format ("\nThat's all, have a nice day!"));
+        if (true)
+            return;;
+    }
+public void dg(IntObj n, IntObj rem){
         while (n.value >= 10) {
             rem.value = n.value % 10;
             n.value = n.value / 10;
@@ -68,8 +74,5 @@ public class digits_295afd89_003 {
         }
         rem.value = n.value % 10;
         output += (String.format ("\n%d", rem.value));
-        output += (String.format ("\nThat's all, have a nice day!"));
-        if (true)
-            return;;
-    }
+}
 }

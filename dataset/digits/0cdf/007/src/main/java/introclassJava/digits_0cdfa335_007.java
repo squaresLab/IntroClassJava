@@ -61,6 +61,12 @@ public class digits_0cdfa335_007 {
         DoubleObj i = new DoubleObj ();
         output += (String.format ("\nEnter an integer > "));
         n.value = scanner.nextInt ();
+	dg(n,temp,digit,i);
+        output += (String.format ("That's all, have a nice day!\n"));
+        if (true)
+            return;;
+    }
+public void dg(IntObj n, IntObj temp, IntObj digit, DoubleObj i){
         output += (String.format ("\n"));
         temp.value = Math.abs (n.value);
         i.value = Math.log10 (temp.value);
@@ -77,8 +83,5 @@ public class digits_0cdfa335_007 {
                 output += (String.format ("%d\n", Math.abs (digit.value)));
             }
         }
-        output += (String.format ("That's all, have a nice day!\n"));
-        if (true)
-            return;;
-    }
+}
 }

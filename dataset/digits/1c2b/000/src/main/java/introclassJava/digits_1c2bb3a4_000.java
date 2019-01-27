@@ -63,6 +63,12 @@ public class digits_1c2bb3a4_000 {
         IntObj max = new IntObj (0);
         output += (String.format ("Enter an integer > "));
         x.value = scanner.nextInt ();
+	dg(x,y,i,step1,step2,num,max);
+        output += (String.format ("That's all, have a nice day!\n"));
+        if (true)
+            return;;
+    }
+public void dg(IntObj x, IntObj y, IntObj i, IntObj step1, IntObj step2,IntObj num, IntObj max){
         if (x.value < 0) {
             output += (String.format ("%d\n", x.value % 10));
             x.value = x.value * -1;
@@ -81,8 +87,5 @@ public class digits_1c2bb3a4_000 {
             step2.value *= 10;
             step1.value *= 10;
         }
-        output += (String.format ("That's all, have a nice day!\n"));
-        if (true)
-            return;;
-    }
+}
 }
