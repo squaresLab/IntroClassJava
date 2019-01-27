@@ -64,23 +64,25 @@ public class median_317aa705_003 {
         a.value = scanner.nextInt ();
         b.value = scanner.nextInt ();
         c.value = scanner.nextInt ();
-        median(a, b, c, median);
-       output += (String.format ("%d is the median", median.value));
+        median(a, b, c, median, output);
         if (true)
             return;;
     }
 
-    public static void median(IntObj a, IntObj b, IntObj c, IntObj median) {
+    public static void median(IntObj a, IntObj b, IntObj c, IntObj median, String output) {
         if ((b.value > a.value && b.value < c.value)
                 || (b.value < a.value && b.value > c.value)) {
+            output += (String.format ("%d is the median", b.value));
             median.value = b.value;
         }
         if ((c.value > a.value && c.value < b.value)
                 || (c.value < a.value && c.value > b.value)) {
+            output += (String.format ("%d is the median", c.value));
             median.value = c.value;
         }
         if ((a.value > b.value && a.value < c.value)
                 || (a.value < b.value && a.value > c.value)) {
+            output += (String.format ("%d is the median", a.value));
             median.value = a.value; 
         }
 
