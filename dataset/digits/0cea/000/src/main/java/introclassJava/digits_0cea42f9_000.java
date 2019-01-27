@@ -60,12 +60,16 @@ public class digits_0cea42f9_000 {
         LongObj n = new LongObj ();
         output += (String.format ("Enter an integer >  "));
         n.value = scanner.nextLong ();
+        digits(n);
+        output += (String.format ("That's all, have a nice day!\n"));
+        if (true)
+            return;;
+    }
+
+    public void digits (LongObj n) {
         while (n.value != 0) {
             output += (String.format ("%d\n", n.value % 10));
             n.value /= 10;
         }
-        output += (String.format ("That's all, have a nice day!\n"));
-        if (true)
-            return;;
     }
 }
