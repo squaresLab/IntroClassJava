@@ -70,13 +70,13 @@ public class grade_07045530_002 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) > "));
         score.value = scanner.nextFloat ();
-        gr(a,b,c,d,grade);
+        gr(a,b,c,d,score,grade);
 	output += (String.format ("Student has an %c grade\n", grade.value));
         if (true)
             return;;
     }
 
-public static void gr(FloatObj a, FloatObj b, FloatObj c, FloatObj d, FloatObj grade){
+public static void gr(FloatObj a, FloatObj b, FloatObj c, FloatObj d, FloatObj score, CharObj grade){
         if (score.value >= a.value) {
             grade.value = 'A';
         } else if ((score.value >= b.value) && (score.value < a.value)) {
