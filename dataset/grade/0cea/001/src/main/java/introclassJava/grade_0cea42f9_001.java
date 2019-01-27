@@ -42,7 +42,7 @@ class CharObj {
 
 public class grade_0cea42f9_001 {
     public java.util.Scanner scanner;
-    public String output = "";
+    public static String output = "";
 
     public static void main (String[]args) throws Exception {
         grade_0cea42f9_001 mainClass = new grade_0cea42f9_001 ();
@@ -68,6 +68,12 @@ public class grade_0cea42f9_001 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) > "));
         score.value = scanner.nextFloat ();
+        gr(A,B,C,D,score);
+	if (true)
+            return;;
+    }
+public static void gr(FloatObj A, FloatObj B, FloatObj C, FloatObj D,FloatObj score){
+
         if (score.value >= A.value) {
             output += (String.format ("Student has an A grade\n"));
         } else if (score.value < A.value && score.value >= B.value) {
@@ -79,7 +85,5 @@ public class grade_0cea42f9_001 {
         } else {
             output += (String.format ("Student has failed the course\n"));
         }
-        if (true)
-            return;;
-    }
+}
 }
