@@ -60,6 +60,7 @@ public class grade_833bd42c_003 {
         DoubleObj grade_a = new DoubleObj (), grade_b =
             new DoubleObj (), grade_c = new DoubleObj (), grade_d =
             new DoubleObj (), student_score = new DoubleObj ();
+        CharObj grade = new CharObj();
         output +=
             (String.format
              ("Enter thresholds for A, B, C, D\nin that order, decreasing percentages > "));
@@ -70,18 +71,28 @@ public class grade_833bd42c_003 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) >"));
         student_score.value = scanner.nextDouble ();
-        if (student_score.value >= grade_a.value) {
-            output += (String.format ("Student has an A grade\n"));
-        } else if (student_score.value >= grade_b.value) {
-            output += (String.format ("Student has an B grade\n"));
-        } else if (student_score.value >= grade_c.value) {
-            output += (String.format ("Student has an C grade\n"));
-        } else if (student_score.value >= grade_d.value) {
-            output += (String.format ("Student has an D grade\n"));
-        } else {
-            output += (String.format ("Student has an F grade\n"));
-        }
+        grade(grade_a, grade_b, grade_c, grade_d, student_score, grade);
         if (true)
             return;;
     }
+    public void grade( DoubleObj grade_a, DoubleObj grade_b, DoubleObj grade_c, DoubleObj grade_d, DoubleObj student_score, CharObj grade) {
+        if (student_score.value >= grade_a.value) {
+            output += (String.format ("Student has an A grade\n"));
+            grade.value = 'A';
+        } else if (student_score.value >= grade_b.value) {
+            output += (String.format ("Student has an B grade\n"));
+            grade.value = 'B';
+        } else if (student_score.value >= grade_c.value) {
+            output += (String.format ("Student has an C grade\n"));
+            grade.value = 'C';
+        } else if (student_score.value >= grade_d.value) {
+            output += (String.format ("Student has an D grade\n"));
+            grade.value = 'D';
+        } else {
+            output += (String.format ("Student has an F grade\n"));
+            grade.value = 'F';
+        }
+
+    }
+       
 }

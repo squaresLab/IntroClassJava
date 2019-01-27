@@ -71,6 +71,13 @@ public class grade_b6fd408d_000 {
         output +=
             (String.format ("Thank you.  Now enter student score (percent) >"));
         score.value = scanner.nextDouble ();
+        grade(a, b, c, d, score, grade);
+        output += (String.format ("Student has an %c grade\n", grade.value));
+        if (true)
+            return;;
+    }
+
+    public void grade (DoubleObj a, DoubleObj b, DoubleObj c, DoubleObj d, DoubleObj score, CharObj grade) {
         if (score.value >= a.value) {
             grade.value = 'A';
         } else if (score.value >= b.value) {
@@ -82,8 +89,5 @@ public class grade_b6fd408d_000 {
         } else {
             grade.value = 'F';
         }
-        output += (String.format ("Student has an %c grade\n", grade.value));
-        if (true)
-            return;;
     }
 }
