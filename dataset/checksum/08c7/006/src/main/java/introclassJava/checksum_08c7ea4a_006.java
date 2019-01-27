@@ -65,6 +65,13 @@ public class checksum_08c7ea4a_006 {
             (String.format
              ("Enter an abitrarily long string, ending with carriage return > "));
         string = scanner.next ().toCharArray ();
+        checksum(string, checksumchar, i, stringlength, checksum_summation);
+        output += (String.format ("Check sum is %c\n", checksumchar.value));
+        if (true)
+            return;;
+    }
+
+    public void checksum(char[] string, CharObj checksumchar, IntObj i, IntObj stringlength, IntObj checksum_summation) {
         stringlength.value = string.length;
         checksum_summation.value = 0;
         for (i.value = 0; i.value < stringlength.value; i.value++) {
@@ -73,8 +80,5 @@ public class checksum_08c7ea4a_006 {
         checksum_summation.value /= 64;
         checksum_summation.value += (int) ' ';
         checksumchar.value = (char) checksum_summation.value;
-        output += (String.format ("Check sum is %c\n", checksumchar.value));
-        if (true)
-            return;;
     }
 }

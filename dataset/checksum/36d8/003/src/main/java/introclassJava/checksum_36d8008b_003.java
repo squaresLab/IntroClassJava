@@ -63,6 +63,13 @@ public class checksum_36d8008b_003 {
         output +=
             (String.format
              ("Enter an abitrarily long string, ending with carriage return > "));
+        checksum(sum, next);
+        output += (String.format ("Check sum is %c\n", sum.value));
+        if (true)
+            return;;
+    }
+
+    public void checksum(IntObj sum, CharObj next) {
         while (next.value != '\n') {
             try {
                 next.value = scanner.findInLine (".").charAt (0);
@@ -72,8 +79,5 @@ public class checksum_36d8008b_003 {
             sum.value = sum.value + next.value;
         }
         sum.value = sum.value % 64 + 22;
-        output += (String.format ("Check sum is %c\n", sum.value));
-        if (true)
-            return;;
     }
 }

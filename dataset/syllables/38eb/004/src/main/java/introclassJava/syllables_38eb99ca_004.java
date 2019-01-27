@@ -63,6 +63,14 @@ public class syllables_38eb99ca_004 {
         IntObj count = new IntObj (0);
         output += (String.format ("Please enter a string > "));
         string = (scanner.nextLine () + "\n").toCharArray ();
+        syllables(string, i, length, count);
+        output +=
+            (String.format ("The number of syllables is %d.\n", count.value));
+        if (true)
+            return;;
+    }
+
+    public void syllables(char[] string, IntObj i, IntObj length, IntObj count) {
         length.value = string.length;
         for (i.value = 0; i.value < length.value; i.value++) {
             if (string[i.value] == 'a' || string[i.value] == 'e'
@@ -71,9 +79,5 @@ public class syllables_38eb99ca_004 {
                 count.value++;
             }
         }
-        output +=
-            (String.format ("The number of syllables is %d.\n", count.value));
-        if (true)
-            return;;
     }
 }
