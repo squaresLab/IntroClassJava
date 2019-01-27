@@ -59,24 +59,34 @@ public class smallest_3b2376ab_008 {
     public void exec () throws Exception {
         IntObj n1 = new IntObj (), n2 = new IntObj (), n3 = new IntObj (), n4 =
             new IntObj ();
+        IntObj smallest = new IntObj();
         output +=
             (String.format ("Please enter 4 numbers separated by spaces > "));
         n1.value = scanner.nextInt ();
         n2.value = scanner.nextInt ();
         n3.value = scanner.nextInt ();
         n4.value = scanner.nextInt ();
+        smallest(n1, n2, n3, n4, smallest);
+        if (true)
+            return;;
+    }
+
+    public void smallest (IntObj n1, IntObj n2, IntObj n3, IntObj n4, IntObj smallest) {
         if (n1.value < n2.value && n1.value < n3.value && n1.value < n4.value) {
             output += (String.format ("%d is the smallest ", n1.value));
+            smallest.value = n1.value ;
         } else if (n2.value < n1.value && n2.value < n3.value
                    && n2.value < n4.value) {
             output += (String.format ("%d is the smallest", n2.value));
+            smallest.value = n2.value ;
         } else if (n3.value < n1.value && n3.value < n2.value
                    && n3.value < n4.value) {
             output += (String.format ("%d is the smallest", n3.value));
+            smallest.value = n3.value ;
         } else {
             output += (String.format ("%d is the smallest", n4.value));
+            smallest.value = n4.value ;
         }
-        if (true)
-            return;;
+
     }
 }

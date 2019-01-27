@@ -66,6 +66,13 @@ public class smallest_88394fc0_002 {
         c.value = scanner.nextInt ();
         d.value = scanner.nextInt ();
         IntObj smallest = new IntObj ();
+        smallest(a, b, c, d, smallest);
+        output += (String.format ("%d is the smallest", smallest.value));
+        if (true)
+            return;;
+    }
+
+    public void smallest (IntObj a, IntObj b, IntObj c, IntObj d, IntObj smallest) {
         smallest.value = a.value;
         if (a.value > b.value) {
             smallest.value = b.value;
@@ -78,8 +85,5 @@ public class smallest_88394fc0_002 {
         } else if (a.value > d.value) {
             smallest.value = d.value;
         }
-        output += (String.format ("%d is the smallest", smallest.value));
-        if (true)
-            return;;
     }
 }

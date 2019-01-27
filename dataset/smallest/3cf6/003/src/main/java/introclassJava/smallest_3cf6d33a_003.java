@@ -59,22 +59,32 @@ public class smallest_3cf6d33a_003 {
     public void exec () throws Exception {
         DoubleObj a = new DoubleObj (), b = new DoubleObj (), c =
             new DoubleObj (), d = new DoubleObj ();
+        DoubleObj smallest = new DoubleObj();
         output +=
             (String.format ("Please enter 4 numbers separated by spaces > "));
         a.value = scanner.nextDouble ();
         b.value = scanner.nextDouble ();
         c.value = scanner.nextDouble ();
         d.value = scanner.nextDouble ();
-        if (a.value < b.value && a.value < c.value && a.value < d.value) {
-            output += (String.format ("%.0f is the smallest\n", a.value));
-        } else if (b.value < a.value && b.value < c.value && b.value < d.value) {
-            output += (String.format ("%.0f is the smallest\n", b.value));
-        } else if (c.value < a.value && c.value < b.value && c.value < d.value) {
-            output += (String.format ("%.0f is the smallest\n", c.value));
-        } else if (d.value < a.value && d.value < b.value && d.value < c.value) {
-            output += (String.format ("%.0f is the smallest\n", d.value));
-        }
+        smallest(a, b, c, d, smallest);
         if (true)
             return;;
+    }
+
+    public void smallest (DoubleObj a, DoubleObj b, DoubleObj c, DoubleObj d, DoubleObj smallest) {
+        if (a.value < b.value && a.value < c.value && a.value < d.value) {
+            output += (String.format ("%.0f is the smallest\n", a.value));
+            smallest.value = a.value;
+        } else if (b.value < a.value && b.value < c.value && b.value < d.value) {
+            output += (String.format ("%.0f is the smallest\n", b.value));
+            smallest.value = b.value;
+        } else if (c.value < a.value && c.value < b.value && c.value < d.value) {
+            output += (String.format ("%.0f is the smallest\n", c.value));
+            smallest.value = c.value;
+        } else if (d.value < a.value && d.value < b.value && d.value < c.value) {
+            output += (String.format ("%.0f is the smallest\n", d.value));
+            smallest.value = d.value;
+        }
+
     }
 }

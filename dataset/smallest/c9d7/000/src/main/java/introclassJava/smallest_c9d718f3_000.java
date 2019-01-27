@@ -59,29 +59,38 @@ public class smallest_c9d718f3_000 {
     public void exec () throws Exception {
         DoubleObj num1 = new DoubleObj (), num2 = new DoubleObj (), num3 =
             new DoubleObj (), num4 = new DoubleObj ();
+        DoubleObj smallest = new DoubleObj();
         output +=
             (String.format ("Please enter 4 numbers separated by spaces > "));
         num1.value = scanner.nextDouble ();
         num2.value = scanner.nextDouble ();
         num3.value = scanner.nextDouble ();
         num4.value = scanner.nextDouble ();
+        smallest(num1, num2, num3, num4, smallest);
+        if (true)
+            return;;
+    }
+
+    public void smallest (DoubleObj num1, DoubleObj num2, DoubleObj num3, DoubleObj num4, DoubleObj smallest) {
         if (num1.value < num2.value && num1.value < num3.value
                 && num1.value < num4.value) {
             output += (String.format ("%.0f is the smallest\n", num1.value));
+            smallest.value = num1.value;
         }
         if (num2.value < num1.value && num2.value < num3.value
                 && num2.value < num4.value) {
             output += (String.format ("%.0f is the smallest\n", num2.value));
+            smallest.value = num2.value;
         }
         if (num3.value < num1.value && num3.value < num2.value
                 && num3.value < num4.value) {
             output += (String.format ("%.0f is the smallest\n", num3.value));
+            smallest.value = num3.value;
         }
         if (num4.value < num1.value && num4.value < num2.value
                 && num4.value < num4.value) {
             output += (String.format ("%.0f is the smallest\n", num4.value));
+            smallest.value = num4.value;
         }
-        if (true)
-            return;;
     }
 }

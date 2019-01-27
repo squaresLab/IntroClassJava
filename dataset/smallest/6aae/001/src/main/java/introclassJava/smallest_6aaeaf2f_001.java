@@ -65,6 +65,13 @@ public class smallest_6aaeaf2f_001 {
         int2.value = scanner.nextInt ();
         int3.value = scanner.nextInt ();
         int4.value = scanner.nextInt ();
+        smallest(int1, int2, int3, int4, tmp); 
+        output += (String.format ("%d is the smallest\n", tmp.value));
+        if (true)
+            return;;
+    }
+
+    public void smallest ( IntObj int1, IntObj int2, IntObj int3, IntObj int4, IntObj tmp ) {
         tmp.value = int1.value;
         if (int1.value > int2.value) {
             tmp.value = int2.value;
@@ -73,8 +80,5 @@ public class smallest_6aaeaf2f_001 {
         } else if (tmp.value > int4.value) {
             tmp.value = int4.value;
         }
-        output += (String.format ("%d is the smallest\n", tmp.value));
-        if (true)
-            return;;
     }
 }
