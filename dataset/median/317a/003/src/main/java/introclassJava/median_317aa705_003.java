@@ -42,7 +42,7 @@ class CharObj {
 
 public class median_317aa705_003 {
     public java.util.Scanner scanner;
-    public String output = "";
+    public static String output = "";
 
     public static void main (String[]args) throws Exception {
         median_317aa705_003 mainClass = new median_317aa705_003 ();
@@ -64,12 +64,12 @@ public class median_317aa705_003 {
         a.value = scanner.nextInt ();
         b.value = scanner.nextInt ();
         c.value = scanner.nextInt ();
-        median(a, b, c, median, output);
+        median(a, b, c, median);
         if (true)
             return;;
     }
 
-    public static void median(IntObj a, IntObj b, IntObj c, IntObj median, String output) {
+    public static void median(IntObj a, IntObj b, IntObj c, IntObj median) {
         if ((b.value > a.value && b.value < c.value)
                 || (b.value < a.value && b.value > c.value)) {
             output += (String.format ("%d is the median", b.value));
