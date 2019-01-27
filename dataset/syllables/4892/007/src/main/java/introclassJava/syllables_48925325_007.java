@@ -61,6 +61,13 @@ public class syllables_48925325_007 {
         IntObj len = new IntObj (), i = new IntObj (), num = new IntObj (0);
         output += (String.format ("Please enter a string > "));
         instr = scanner.next ().toCharArray ();
+        syllables(instr, len, i, num);
+        output += (String.format ("The number of syllables is %d\n", num.value));
+        if (true)
+            return;;
+    }
+
+    public void syllables(char[] instr, IntObj len, IntObj i, IntObj num) {
         len.value = instr.length;
         i.value = 0;
         while (i.value < len.value) {
@@ -71,8 +78,5 @@ public class syllables_48925325_007 {
             }
             i.value = i.value + 1;
         }
-        output += (String.format ("The number of syllables is %d\n", num.value));
-        if (true)
-            return;;
     }
 }
