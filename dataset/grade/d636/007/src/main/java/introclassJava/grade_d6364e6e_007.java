@@ -59,6 +59,7 @@ public class grade_d6364e6e_007 {
     public void exec () throws Exception {
         FloatObj A = new FloatObj (), B = new FloatObj (), C =
             new FloatObj (), D = new FloatObj (), Std = new FloatObj ();
+        CharObj grade = new CharObj();
         output +=
             (String.format
              ("Enter thresholds for A, B, C, D\nin that order, decreasing percentages > "));
@@ -69,24 +70,33 @@ public class grade_d6364e6e_007 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) >"));
         Std.value = scanner.nextFloat ();
+        grade (A, B, C, D, Std, grade);
+    }
+
+    public void grade(FloatObj A, FloatObj B, FloatObj C, FloatObj D, FloatObj Std, CharObj grade) {
         if (Std.value >= A.value) {
             output += (String.format ("Student has an A grade\n"));
+            grade.value = 'A';
             if (true)
                 return;;
         } else if (Std.value >= B.value) {
             output += (String.format ("Student has an B grade\n"));
+            grade.value = 'B';
             if (true)
                 return;;
         } else if (Std.value >= C.value) {
             output += (String.format ("Student has an C grade\n"));
+            grade.value = 'C';
             if (true)
                 return;;
         } else if (Std.value >= D.value) {
             output += (String.format ("Student has a D grade\n"));
+            grade.value = 'D';
             if (true)
                 return;;
         } else if (Std.value < D.value) {
             output += (String.format ("Student has failed the course\n"));
+            grade.value = 'F';
             if (true)
                 return;;
         } else {
@@ -96,5 +106,6 @@ public class grade_d6364e6e_007 {
             if (true)
                 return;;
         }
+
     }
 }
