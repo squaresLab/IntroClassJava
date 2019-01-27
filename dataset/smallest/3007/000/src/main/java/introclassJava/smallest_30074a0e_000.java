@@ -42,7 +42,7 @@ class CharObj {
 
 public class smallest_30074a0e_000 {
     public java.util.Scanner scanner;
-    public String output = "";
+    public static String output = "";
 
     public static void main (String[]args) throws Exception {
         smallest_30074a0e_000 mainClass = new smallest_30074a0e_000 ();
@@ -59,24 +59,33 @@ public class smallest_30074a0e_000 {
     public void exec () throws Exception {
         IntObj a = new IntObj (), b = new IntObj (), c = new IntObj (), d =
             new IntObj ();
+        IntObj smallest = new IntObj();
         output +=
             (String.format ("Please enter 4 numbers separated by spaces > "));
         a.value = scanner.nextInt ();
         b.value = scanner.nextInt ();
         c.value = scanner.nextInt ();
         d.value = scanner.nextInt ();
+        smallest(a, b, c, d, smallest);
+        if (true)
+            return;;
+    }
+
+    public static void smallest(IntObj a, IntObj b, IntObj c, IntObj d, IntObj smallest) {
         if (a.value < b.value && a.value < c.value && a.value < d.value) {
             output += (String.format ("%d is the smallest integer\n", a.value));
+            smallest.value = a.value;
         } else if (b.value < a.value && b.value < c.value && b.value < d.value) {
             output += (String.format ("%d is the smallest integer\n", b.value));
+            smallest.value = b.value;
         } else if (c.value < a.value && c.value < b.value && c.value < d.value) {
             output += (String.format ("%d is the smallest integer\n", c.value));
+            smallest.value = c.value;
         } else if (d.value < a.value && d.value < c.value && d.value < b.value) {
             output += (String.format ("%d is the smallest integer\n", d.value));
+            smallest.value = d.value;
         } else {
             output += (String.format ("I don't know what I'm doing. \n"));
         }
-        if (true)
-            return;;
     }
 }
