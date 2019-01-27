@@ -63,17 +63,24 @@ public class median_48b82975_000 {
         a.value = scanner.nextInt ();
         b.value = scanner.nextInt ();
         c.value = scanner.nextInt ();
-        if ((a.value <= b.value && b.value <= c.value)
-                || (c.value <= b.value && b.value <= a.value)) {
+        if (append1(a.value, b.value, c.value)) {
             output += (String.format ("%d is the median\n", b.value));
         }
-        if ((b.value <= a.value && a.value <= c.value)
-                || (c.value <= a.value && a.value <= b.value)) {
+        if (append2(a.value, b.value, c.value)) {
             output += (String.format ("%d is the median\n", a.value));
         } else {
             output += (String.format ("%d is the median\n", c.value));
         }
         if (true)
             return;;
+    }
+
+    boolean append1(int a, int b, int c)
+    {
+        return((a<=b&&b<=c)||(c<=b&&b<=a));
+    }
+    boolean append2(int a, int b, int c)
+    {
+        return(b<=a && a<=c) || (c<=a&&a<=b);
     }
 }
