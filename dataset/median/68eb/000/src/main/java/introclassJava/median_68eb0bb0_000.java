@@ -58,19 +58,28 @@ public class median_68eb0bb0_000 {
 
     public void exec () throws Exception {
         IntObj x = new IntObj (), y = new IntObj (), z = new IntObj ();
+        IntObj median = new IntObj();
         output +=
             (String.format ("Please enter 3 numbers separated by space  > "));
+        median(x, y, z, median);
         x.value = scanner.nextInt ();
         y.value = scanner.nextInt ();
         z.value = scanner.nextInt ();
-        if (x.value >= y.value && x.value <= z.value) {
-            output += (String.format ("%d is the median\n", x.value));
-        } else if (y.value >= x.value && y.value <= z.value) {
-            output += (String.format ("%d is the median\n", y.value));
-        } else {
-            output += (String.format ("%d is the median\n", z.value));
-        }
+
         if (true)
             return;;
+    }
+
+    public void median(IntObj x, IntObj y, IntObj z, IntObj median) {
+        if (x.value >= y.value && x.value <= z.value) {
+            output += (String.format ("%d is the median\n", x.value));
+            median.value = x.value;
+        } else if (y.value >= x.value && y.value <= z.value) {
+            output += (String.format ("%d is the median\n", y.value));
+            median.value = y.value;
+        } else {
+            output += (String.format ("%d is the median\n", z.value));
+            median.value = z.value;
+        }
     }
 }

@@ -64,6 +64,13 @@ public class median_b6fd408d_000 {
         n1.value = scanner.nextInt ();
         n2.value = scanner.nextInt ();
         n3.value = scanner.nextInt ();
+        median(n1, n2, n3, temp);
+        output += (String.format ("%d is the median\n", n2.value));
+        if (true)
+            return;;
+    }
+
+    public void median(IntObj n1, IntObj n2, IntObj n3, IntObj temp) {
         if (n2.value < n1.value) {
             temp.value = n2.value;
             n2.value = n1.value;
@@ -74,8 +81,5 @@ public class median_b6fd408d_000 {
             n2.value = n3.value;
             n3.value = temp.value;
         }
-        output += (String.format ("%d is the median\n", n2.value));
-        if (true)
-            return;;
     }
 }

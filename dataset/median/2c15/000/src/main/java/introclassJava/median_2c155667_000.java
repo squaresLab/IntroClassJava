@@ -58,25 +58,33 @@ public class median_2c155667_000 {
 
     public void exec () throws Exception {
         IntObj i1 = new IntObj (), i2 = new IntObj (), i3 = new IntObj ();
+        IntObj median = new IntObj();
         output +=
             (String.format ("Please enter 3 numbers separated by spaces > "));
         i1.value = scanner.nextInt ();
         i2.value = scanner.nextInt ();
         i3.value = scanner.nextInt ();
+        median(i1, i2, i3, median);
+        if (true)
+            return;;
+    }
+
+    public void median(IntObj i1, IntObj i2, IntObj i3, IntObj median) {
         if ((i1.value >= i2.value && i1.value <= i3.value)
                 || (i1.value == i2.value && i1.value == i3.value)
                 || (i1.value > i2.value && i1.value < i3.value)) {
             output += (String.format ("%d is the median\n", i1.value));
+            median.value = i1.value;
         } else if ((i2.value >= i1.value && i2.value <= i3.value)
                    || (i2.value == i1.value && i2.value == i3.value)
                    || (i2.value > i1.value && i2.value < i3.value)) {
             output += (String.format ("%d is the median\n", i2.value));
+            median.value = i2.value;
         } else if ((i3.value >= i2.value && i3.value <= i1.value)
                    || (i3.value == i2.value && i3.value == i1.value)
                    || (i3.value > i2.value && i3.value < i1.value)) {
             output += (String.format ("%d is the median\n", i3.value));
+            median.value = i3.value;
         }
-        if (true)
-            return;;
     }
 }
