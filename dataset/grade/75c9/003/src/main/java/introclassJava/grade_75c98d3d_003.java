@@ -68,6 +68,12 @@ public class grade_75c98d3d_003 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) >"));
         grade.value = scanner.nextFloat ();
+	gr(A,B,C,D,grade);
+        if (true)
+            return;;
+    }
+
+public void gr(FloatObj A, FloatObj B, FloatObj C, FloatObj D, FloatObj grade){
         if (grade.value < 60) {
             output += (String.format ("Student has failed the course\n"));
         } else if (grade.value < 70) {
@@ -79,7 +85,5 @@ public class grade_75c98d3d_003 {
         } else {
             output += (String.format ("Student has an A grade\n"));
         }
-        if (true)
-            return;;
-    }
+}
 }

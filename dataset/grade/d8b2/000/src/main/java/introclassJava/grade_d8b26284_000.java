@@ -69,6 +69,11 @@ public class grade_d8b26284_000 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) > "));
         score.value = scanner.nextDouble ();
+	gr(A,B,C,D,score);
+        if (true)
+            return;;
+    }
+public void gr(DoubleObj A, DoubleObj B, DoubleObj C, DoubleObj D, DoubleObj score){
         if (score.value < D.value) {
             output += (String.format ("Student has an F grade\n"));
         } else if (score.value >= D.value && score.value < C.value) {
@@ -80,7 +85,5 @@ public class grade_d8b26284_000 {
         } else if (score.value >= A.value) {
             output += (String.format ("Student has an A grade\n"));
         }
-        if (true)
-            return;;
-    }
+}
 }

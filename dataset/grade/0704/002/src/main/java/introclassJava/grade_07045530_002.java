@@ -76,7 +76,7 @@ public class grade_07045530_002 {
             return;;
     }
 
-public static void gr(FloatObj a, FloatObj b, FloatObj c, FloatObj d, FloatObj score, CharObj grade){
+public void gr(FloatObj a, FloatObj b, FloatObj c, FloatObj d, FloatObj score, CharObj grade){
         if (score.value >= a.value) {
             grade.value = 'A';
         } else if ((score.value >= b.value) && (score.value < a.value)) {

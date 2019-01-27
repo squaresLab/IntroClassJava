@@ -72,17 +72,19 @@ public class grade_6e464f2b_000 {
         s.value = scanner.nextFloat ();
         if (s.value < d.value) {
             output += (String.format ("Student has failed the course\n"));
-        } else if (s.value < c.value) {
-            g.value = 'C';
-        } else if (s.value < b.value) {
-            g.value = 'B';
-        } else {
-            g.value = 'A';
-        }
+        } else gr(a,b,c,d, s,g);
         if (g.value == 'A' || g.value == 'B' || g.value == 'C') {
             output += (String.format ("Student has an %c grade\n", g.value));
         }
         if (true)
             return;;
     }
+public void gr(FloatObj a, FloatObj b, FloatObj c, FloatObj d, FloatObj s, CharObj g){ if (s.value < c.value) {
+            g.value = 'C';
+        } else if (s.value < b.value) {
+            g.value = 'B';
+        } else {
+            g.value = 'A';
+        }
+}
 }

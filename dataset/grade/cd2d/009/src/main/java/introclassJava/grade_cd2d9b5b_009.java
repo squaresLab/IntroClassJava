@@ -70,6 +70,12 @@ public class grade_cd2d9b5b_009 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) >"));
         score.value = scanner.nextFloat ();
+	gr(num1,num2,num3,num4,score);
+        output += (String.format ("\n"));
+        if (true)
+            return;;
+    }
+public void gr(FloatObj num1,FloatObj num2,FloatObj num3,FloatObj num4,FloatObj score){
         if (score.value >= num1.value) {
             output += (String.format ("Student has an A grade"));
         } else if (score.value >= num2.value) {
@@ -79,8 +85,5 @@ public class grade_cd2d9b5b_009 {
         } else if (score.value >= num4.value) {
             output += (String.format ("Student has an D grade"));
         }
-        output += (String.format ("\n"));
-        if (true)
-            return;;
-    }
+}
 }

@@ -42,7 +42,7 @@ class CharObj {
 
 public class grade_0cea42f9_001 {
     public java.util.Scanner scanner;
-    public static String output = "";
+    public String output = "";
 
     public static void main (String[]args) throws Exception {
         grade_0cea42f9_001 mainClass = new grade_0cea42f9_001 ();
@@ -72,7 +72,7 @@ public class grade_0cea42f9_001 {
 	if (true)
             return;;
     }
-public static void gr(FloatObj A, FloatObj B, FloatObj C, FloatObj D,FloatObj score){
+public void gr(FloatObj A, FloatObj B, FloatObj C, FloatObj D,FloatObj score){
 
         if (score.value >= A.value) {
             output += (String.format ("Student has an A grade\n"));

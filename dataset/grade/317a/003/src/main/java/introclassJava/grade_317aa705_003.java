@@ -70,6 +70,15 @@ public class grade_317aa705_003 {
         output +=
             (String.format ("Thank you. Now enter student score (percent) > "));
         percent.value = scanner.nextFloat ();
+	gr(A,B,C,D,percent,grade);
+        if (percent.value != 0) {
+            output += (String.format ("Student has an %c grade\n\n", grade.value));
+        }
+        if (true)
+            return;;
+    }
+    public void gr(FloatObj A, FloatObj B, FloatObj C, FloatObj D, FloatObj percent, CharObj grade){
+
         if (percent.value == 0) {
             output += (String.format ("Student has failed the course"));
         } else if (percent.value >= A.value) {
@@ -83,10 +92,5 @@ public class grade_317aa705_003 {
         } else if ((percent.value < D.value) && (percent.value > 0)) {
             grade.value = 'F';
         }
-        if (percent.value != 0) {
-            output += (String.format ("Student has an %c grade\n\n", grade.value));
-        }
-        if (true)
-            return;;
-    }
+}
 }
