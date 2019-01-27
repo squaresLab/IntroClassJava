@@ -63,8 +63,6 @@ public class median_6e464f2b_003 {
         a.value = scanner.nextInt ();
         b.value = scanner.nextInt ();
         c.value = scanner.nextInt ();
-        output += String.format("%d is the median\n", calc(a.value, b.value, c.value));
-        /*
         if ((a.value > b.value && a.value < c.value)
                 || (a.value < b.value && a.value > c.value)) {
             output += (String.format ("%d is the median\n", a.value));
@@ -74,15 +72,7 @@ public class median_6e464f2b_003 {
         } else {
             output += (String.format ("%d is the median\n", c.value));
         }
-        */
         if (true)
             return;;
-    }
-
-    int calc(int a, int b, int c)
-    {
-        if((a>b&&a<c) || (a<b && a>c)) return a;
-        else if ((b > a && b < c) || (b<a&&b>c)) return b;
-        return c;
     }
 }

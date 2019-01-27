@@ -63,31 +63,16 @@ public class median_1c2bb3a4_000 {
         x.value = scanner.nextInt ();
         y.value = scanner.nextInt ();
         z.value = scanner.nextInt ();
-        if (display1(x.value,y.value,z.value)) {
+        if (x.value == y.value) {
             output += (String.format ("%d is the median\n", x.value));
         }
-        if (display2(x.value,y.value,z.value)) {
+        if (x.value == z.value) {
             output += (String.format ("%d is the median\n", x.value));
         }
-        if (display3(x.value,y.value,z.value)) {
+        if (y.value == z.value) {
             output += (String.format ("%d is the median\n", y.value));
         }
         if (true)
             return;;
-    }
-
-    boolean display1(int x, int y, int z)
-    {
-        return x==y;
-    }
-
-    boolean display2(int x, int y ,int z)
-    {
-        return x==z;
-    }
-
-    boolean display3(int x, int y, int z)
-    {
-        return y==z;
     }
 }
