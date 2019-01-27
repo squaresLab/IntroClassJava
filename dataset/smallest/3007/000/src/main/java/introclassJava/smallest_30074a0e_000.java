@@ -42,7 +42,7 @@ class CharObj {
 
 public class smallest_30074a0e_000 {
     public java.util.Scanner scanner;
-    public static String output = "";
+    public String output = "";
 
     public static void main (String[]args) throws Exception {
         smallest_30074a0e_000 mainClass = new smallest_30074a0e_000 ();
@@ -71,7 +71,7 @@ public class smallest_30074a0e_000 {
             return;;
     }
 
-    public static void smallest(IntObj a, IntObj b, IntObj c, IntObj d, IntObj smallest) {
+    public void smallest(IntObj a, IntObj b, IntObj c, IntObj d, IntObj smallest) {
         if (a.value < b.value && a.value < c.value && a.value < d.value) {
             output += (String.format ("%d is the smallest integer\n", a.value));
             smallest.value = a.value;
