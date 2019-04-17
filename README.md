@@ -1,4 +1,6 @@
-# IntroClassJava: A Benchmark of Buggy Java Programs
+# Refactored IntroClassJava
+
+These are refactored IntroClassJava bugs used for evaluating the repair approach described in Leveraging Program Invariants to Promote Population Diversity in Search-Based Automatic Program Repair, Zhen Yu Ding, Yiwei Lyu, Christopher S. Timperley, and Claire Le Goues, in Genetic Improvement Workshop, To Appear GI ’19, 2019.
 
 If you use IntroClassJava, please cite the following technical report:
 
