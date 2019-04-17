@@ -2,6 +2,8 @@
 
 These are refactored IntroClassJava bugs used for evaluating the repair approach described in Leveraging Program Invariants to Promote Population Diversity in Search-Based Automatic Program Repair, Zhen Yu Ding, Yiwei Lyu, Christopher S. Timperley, and Claire Le Goues, in Genetic Improvement Workshop, To Appear GI ’19, 2019.
 
+-------
+
 If you use IntroClassJava, please cite the following technical report:
 
 Thomas Durieux and Martin Monperrus. "[IntroClassJava: A Benchmark of  297 Small and Buggy Java Programs](https://hal.archives-ouvertes.fr/hal-01272126/document)". Technical Report hal-01272126, University of Lille; 2015. 
